@@ -1,0 +1,21 @@
+{
+  "name": "mjml-standalone",
+  "version": "1.0.0",
+  "description": "Standalone MJML CLI binary — build responsive emails on any machine",
+  "license": "MIT",
+  "bin": {
+    "mjml": "index.js"
+  },
+  "pkg": {
+    "scripts": [
+      "../packages/*/lib/**/*.js"
+    ],
+    "assets": [
+      "../packages/*/lib/**/*.json"
+    ],
+    "targets": [
+      "node20"
+    ],
+    "outputPath": "../dist"
+  }
+}
